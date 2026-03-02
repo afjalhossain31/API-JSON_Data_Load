@@ -1,33 +1,45 @@
 # API and JSON Data Load
 
-A simple project demonstrating how to work with JSON data in JavaScript.
+A simple project demonstrating how to fetch JSON data from an API using JavaScript.
 
 ## Features
 
-- JSON.stringify() - Convert JavaScript objects to JSON strings
-- JSON.parse() - Convert JSON strings back to JavaScript objects
+- `fetch()` - Promise based API data fetching
+- `.then()` - Promise handling
+- `res.json()` - JSON data parsing
 
 ## Usage
 
-Open `index.html` in a browser or run with Node.js:
+Open `index.html` in a browser and call the functions:
 
-```bash
-node script.js
-```
+- `loadData()` - Fetch a single todo item
+- `loadposts()` - Fetch all posts
 
 ## Example
 
 ```javascript
-const person = {
-  name: "Afjal Hossain",
-  age: 25,
-  city: "Dhaka",
-  country: "Bangladesh",
+// fetch() -> Promise of response / JSON data fetching
+// json is a method
+
+const loadData = () => {
+  fetch("https://jsonplaceholder.typicode.com/todos/1")
+    // promise of response
+    .then((res) => res.json())
+    // promise of json data
+    .then((data) => console.log(data));
 };
 
-// Convert to JSON string
-const personJSON = JSON.stringify(person);
+const loadposts = () => {
+  const url = "https://jsonplaceholder.typicode.com/posts";
 
-// Parse back to object
-const personObj = JSON.parse(personJSON);
+  fetch(url)
+    .then((res) => res.json())
+    .then((json) => console.log(json));
+};
 ```
+
+## API Used
+
+- [JSONPlaceholder](https://jsonplaceholder.typicode.com) - Fake REST API for testing
+  - `/todos/1` - Single todo item
+  - `/posts` - All posts
