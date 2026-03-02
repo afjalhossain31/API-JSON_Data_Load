@@ -13,6 +13,8 @@ console.log(person);
 
 const personJSON = JSON.stringify(person);
 console.log(personJSON);
+console.log(personJSON ,typeof personJSON);
 
 const personObj = JSON.parse(personJSON);
 console.log(personObj);
+console.log(personObj ,typeof personObj);
