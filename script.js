@@ -9,30 +9,11 @@ const loadData = () => {
   .then((data) => console.log(data));
 }
 
-
-const loadPosts = () => {
-  const url = "https://jsonplaceholder.typicode.com/posts";
-
-  fetch(url)
-    .then((res) => res.json())
-    // .then(json => console.log(json));
-    .then((json) => {
-      console.log(json);
-      displayPost(json);
-    });
-}
-
-const displayPost = (posts) => {
-  posts.forEach(post => {
-    console.log(post);
-  });
-}
-
-  
-
-
-
-
+// const displayPost = (posts) => {
+//   posts.forEach((post) => {
+//     console.log(post);
+//   });
+// };
 
 
 

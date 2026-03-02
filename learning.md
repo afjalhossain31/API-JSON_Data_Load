@@ -1,6 +1,6 @@
 # API and JSON Data Load
 
-A simple project demonstrating how to fetch JSON data from an API using JavaScript.
+An API allows one application to communicate with another application or server to request and receive data
 
 ## Features
 
