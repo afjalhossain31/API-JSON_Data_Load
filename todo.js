@@ -11,7 +11,8 @@ const displayTodo = (todos) => {
   const todoContainer = document.getElementById("todo-container");
   todoContainer.innerHTML = "";
 
-  todos.forEach((todo) => {    console.log(todo);
+  todos.forEach((todo) => {
+    console.log(todo);
 
     const todoCard = document.createElement("div");
     todoCard.innerHTML = `

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+    <style>
+        #photos-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+            padding: 20px;
+        }
+        .photo-card{
+            border: 1px solid gray;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .photo-card img{
+            width: 200px;
+            height: 200px;
+            border-radius: 4px;
+        }
+        .photo-card h3{
+            margin-top: 10px;
+            font-size: 16px;
+        }
+         .title{
+            text-align: center;
+            margin-top: 20px;
+            font-size: 30px;
+            color: #444;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="title">All Photos</h1>
+
+    <section id="photos-container"></section>
+
+    <script src="albums.js"></script>
+
+</body>
+
+</html>
