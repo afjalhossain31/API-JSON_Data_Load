@@ -6,33 +6,6 @@ A JavaScript project demonstrating how to fetch and display data from APIs using
 
 This project contains multiple HTML pages that fetch and display different types of data from the [JSONPlaceholder API](https://jsonplaceholder.typicode.com/) - a free fake REST API for testing and prototyping.
 
-## 🚀 Features
-
-### 1. **Posts Display** (`index.html` + `posts.js`)
-- Fetches all posts from the API
-- Displays posts in a responsive 3-column grid layout
-- Shows post title and body content
-- Styled cards with shadows and borders
-
-### 2. **Photo Albums** (`albums.html` + `albums.js`)
-- Fetches photos from album 1
-- Displays 50 photos in a responsive grid layout
-- Uses **picsum.photos** for reliable placeholder images
-- Auto-adjusts columns based on screen width
-- Shows photo title above each image
-- Responsive design with `auto-fit` and `minmax()`
-
-### 3. **User Posts** (`Users.html` + `users.js`)
-- Fetches posts from a specific user (User ID: 1)
-- Displays post titles and descriptions
-- Simple layout with headings and paragraphs
-
-### 4. **Todo List** (`todo.html` + `todo.js`)
-- Fetches todo items for User ID: 1
-- Shows completion status with Font Awesome icons
-- Visual indicators for completed/incomplete tasks
-- Displays todo title and completion status
-
 ## 🛠️ Technologies Used
 
 - **HTML5** - Page structure
@@ -240,15 +213,3 @@ This project demonstrates understanding of:
 - Modern ES6+ JavaScript features
 - Grid layouts and flexbox
 - Handling API data and displaying dynamically
-
-## 👨‍💻 Author
-
-Created as part of JavaScript learning journey - Introduction to JavaScript course
-
-## 📄 License
-
-Free to use for educational purposes
-
----
-
-**Note:** This project uses free public APIs. No authentication or API keys required!
