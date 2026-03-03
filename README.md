@@ -173,6 +173,45 @@ fetch('https://jsonplaceholder.typicode.com/posts/1', {
 
 > **Note:** This project currently uses only GET requests to fetch and display data. POST, PUT, and DELETE can be implemented for full CRUD functionality.
 
+## 📡 HTTP Status Codes
+
+Status codes indicate the result of an API request. They are grouped into five categories:
+
+### 📊 Main Categories
+
+| Range | Type | Meaning |
+|-------|------|---------|
+| **2xx** | ✅ Success | Request succeeded |
+| **4xx** | ⚠️ Client Error | Problem with your request |
+| **5xx** | ❌ Server Error | Problem with the server |
+
+### 🔑 Most Common Status Codes
+
+| Code | Name | When It Happens |
+|------|------|-----------------|
+| **200** | OK | Successful GET, PUT, PATCH |
+| **201** | Created | Successful POST (new resource created) |
+| **204** | No Content | Successful DELETE (no data returned) |
+| **400** | Bad Request | Invalid data sent to server |
+| **401** | Unauthorized | Authentication required or failed |
+| **404** | Not Found | Resource doesn't exist |
+| **500** | Server Error | Something went wrong on server |
+
+### 💡 Simple Example
+
+```javascript
+fetch('https://jsonplaceholder.typicode.com/posts/1')
+    .then(res => {
+        console.log(res.status); // Check status: 200, 404, etc.
+        if (!res.ok) {
+            throw new Error(`Error: ${res.status}`);
+        }
+        return res.json();
+    })
+    .then(data => console.log(data))
+    .catch(error => console.error(error));
+```
+
 ## 🎨 Styling Features
 
 - Responsive grid layouts using CSS Grid
