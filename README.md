@@ -6,6 +6,16 @@ A JavaScript project demonstrating how to fetch and display data from APIs using
 
 This project contains multiple HTML pages that fetch and display different types of data from the [JSONPlaceholder API](https://jsonplaceholder.typicode.com/) - a free fake REST API for testing and prototyping.
 
+### Learning 
+- How Internet Work
+- HTTP ,HTTPS
+- DNS
+- IP , IPV4 , IPV6
+- API (Application programming Interface)
+- JSON , Fetch , 
+- Conditional Rendering 
+- Network Debugger / Async Await 
+
 ## 🛠️ Technologies Used
 
 - **HTML5** - Page structure
