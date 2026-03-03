@@ -7,6 +7,18 @@ const loadTodo = () => {
     });
 };
 
+// Manage Aync/Await 
+// 1. way -1
+// const loadTodo = async () => {
+//   const url = "https://jsonplaceholder.typicode.com/users/1/todos";
+//   const res = await fetch(url);
+//   const data = await res.json();
+//   displayTodo(data);
+// };
+
+
+
+
 const displayTodo = (todos) => {
   const todoContainer = document.getElementById("todo-container");
   todoContainer.innerHTML = "";
